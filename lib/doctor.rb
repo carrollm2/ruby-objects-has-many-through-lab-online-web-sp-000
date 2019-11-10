@@ -31,7 +31,7 @@ class Doctor
   def patients
 
     patient_names = []
-    @appoitnments.each do |appointment|
+    @appointnments.each do |appointment|
       patient_names << appointment.patient.name
     end
 
