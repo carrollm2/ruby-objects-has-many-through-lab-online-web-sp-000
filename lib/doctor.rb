@@ -30,14 +30,14 @@ class Doctor
 
   def patients
 
-    patient_names = []
-    @appointnments.each do |appointment|
-      patient_names << appointment.patient.name
-    end
+    # patient_names = []
+    # @appointnments.each do |appointment|
+    #   patient_names << appointment.patient.name
+    # end
 
     patient_list = []
     @appointments.each do |appointment|
-      if patient_names.include?(appointment.patient.name) == false
+      if patient_list.include?(appointment.patient) == false
         patient_list << appointment.patient
       end
     end
