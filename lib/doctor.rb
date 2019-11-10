@@ -20,7 +20,6 @@ class Doctor
 
     new_appointment = Appointment.new(date, patient, self)
     @appointments << new_appointment
-    binding.pry
     # patient.appointments << new_appointment
 
   end
