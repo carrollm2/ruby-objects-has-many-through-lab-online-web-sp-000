@@ -35,7 +35,7 @@ class Doctor
     # end
 
     patient_list = []
-    @appointments.each do |appointment|
+    @doctpor_appointments.each do |appointment|
       if patient_list.include?(appointment.patient) == false
         patient_list << appointment.patient
       end
